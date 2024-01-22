@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const userSchema = mongoose.schema({
+const userSchema = mongoose.Schema({
     username: String,
     password: String, 
     email: String,
@@ -10,5 +10,3 @@ const userSchema = mongoose.schema({
 
 
 module.exports = mongoose.model('Paytm-Users', userSchema);
-
-
