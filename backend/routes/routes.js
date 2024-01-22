@@ -1,19 +1,9 @@
 const express = require('express');
 const router = express.Router();
+const userRouter = require('./user.js');
 
 
-const signin = () => {
-    console.log(`signin logic here!`);
-};
-
-const signup = () => {
-    console.log(`signup logic here!`);
-};
-
-
-
-router.get("/signin", signin);
-router.get("/signup", signup);
+router.use("/user", userRouter);
 
 
 module.exports = router;
